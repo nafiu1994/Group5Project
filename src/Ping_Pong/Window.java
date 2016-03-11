@@ -4,18 +4,24 @@
  * and open the template in the editor.
  */
 package Ping_Pong;
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.Color;
+import java.awt.geom.Rectangle2D;
 /**
  *
- * @author SIVLEK DNOMMAH
+ * @author Lawal Nafiu
  */
-public class Window extends JFrame{
-    public Window(int length, int breadth){
-    JFrame window = new JFrame();
-    window.setSize(breadth, length);
-    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    window.setVisible(true);
-    
-}
-    
+public class Window {
+    Color bg = new Color(0x0ff);
+    public Window(int x, int y){
+        JFrame window = new JFrame();
+        window.setSize(x, y);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setLocation(100, 50);
+        window.setVisible(true);
+        Panel obj = new Panel();
+        Animation ball = new Animation();
+        window.getContentPane().add(obj);
+        Rectangle2D a = new Rectangle2D();
+    }
 }
